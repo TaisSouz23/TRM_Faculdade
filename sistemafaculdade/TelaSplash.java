@@ -15,14 +15,11 @@ public class TelaSplash extends JWindow {
         painel.setOpaque(true);
 
         // Logo
-        ImageIcon logo = new ImageIcon(
-            getClass().getResource("/sistemafaculdade/logo.png"));
-        Image img = logo.getImage()
-            .getScaledInstance(280, 280, Image.SCALE_SMOOTH);
+        ImageIcon logo = new ImageIcon( getClass().getResource("/sistemafaculdade/logo.png"));
+        Image img = logo.getImage().getScaledInstance(280, 280, Image.SCALE_SMOOTH);
         JLabel labelLogo = new JLabel(new ImageIcon(img));
         labelLogo.setHorizontalAlignment(SwingConstants.CENTER);
-        labelLogo.setBorder(
-            BorderFactory.createEmptyBorder(80, 0, 0, 0));
+        labelLogo.setBorder(BorderFactory.createEmptyBorder(80, 0, 0, 0));
 
         // Texto
         JLabel labelTexto = new JLabel("Iniciando...", SwingConstants.CENTER);
@@ -40,8 +37,7 @@ public class TelaSplash extends JWindow {
         JPanel painelSul = new JPanel(new GridLayout(2, 1, 5, 10));
         painelSul.setBackground(Color.WHITE);
         painelSul.setOpaque(true);
-        painelSul.setBorder(
-            BorderFactory.createEmptyBorder(10, 60, 50, 60));
+        painelSul.setBorder(BorderFactory.createEmptyBorder(10, 60, 50, 60));
         painelSul.add(labelTexto);
         painelSul.add(progressBar);
 

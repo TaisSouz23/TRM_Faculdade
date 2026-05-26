@@ -9,7 +9,7 @@ package sistemafaculdade;
  * @author taisy
  */
 public class Matricula {
-	private String matriculaAluno;
+    private String matriculaAluno;
     private String nomeCurso;
     
     public Matricula(String matriculaAluno, String nomeCurso) {

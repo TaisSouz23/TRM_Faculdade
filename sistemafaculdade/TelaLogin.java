@@ -20,10 +20,8 @@ public class TelaLogin extends JFrame implements Acionavel {
         getContentPane().setBackground(new Color(245, 245, 245));
 
         // Logo
-        ImageIcon logoIcon = new ImageIcon(
-            getClass().getResource("/sistemafaculdade/logo.png"));
-        Image logoImg = logoIcon.getImage()
-            .getScaledInstance(120, 120, Image.SCALE_SMOOTH);
+        ImageIcon logoIcon = new ImageIcon(getClass().getResource("/sistemafaculdade/logo.png"));
+        Image logoImg = logoIcon.getImage().getScaledInstance(120, 120, Image.SCALE_SMOOTH);
         JLabel lblLogo = new JLabel(new ImageIcon(logoImg));
         lblLogo.setBounds(160, 20, 120, 120);
         add(lblLogo);
@@ -52,9 +50,7 @@ public class TelaLogin extends JFrame implements Acionavel {
         txtUsuario = new JTextField();
         txtUsuario.setFont(new Font("Arial", Font.PLAIN, 14));
         txtUsuario.setBounds(80, 265, 290, 35);
-        txtUsuario.setBorder(BorderFactory.createCompoundBorder(
-            BorderFactory.createLineBorder(new Color(200, 200, 200)),
-            BorderFactory.createEmptyBorder(5, 10, 5, 10)));
+        txtUsuario.setBorder(BorderFactory.createCompoundBorder(BorderFactory.createLineBorder(new Color(200, 200, 200)),BorderFactory.createEmptyBorder(5, 10, 5, 10)));
         add(txtUsuario);
 
         // Label Senha
@@ -67,9 +63,7 @@ public class TelaLogin extends JFrame implements Acionavel {
         txtSenha = new JPasswordField();
         txtSenha.setFont(new Font("Arial", Font.PLAIN, 14));
         txtSenha.setBounds(80, 340, 290, 35);
-        txtSenha.setBorder(BorderFactory.createCompoundBorder(
-            BorderFactory.createLineBorder(new Color(200, 200, 200)),
-            BorderFactory.createEmptyBorder(5, 10, 5, 10)));
+        txtSenha.setBorder(BorderFactory.createCompoundBorder(BorderFactory.createLineBorder(new Color(200, 200, 200)),BorderFactory.createEmptyBorder(5, 10, 5, 10)));
         add(txtSenha);
 
         // Botão Login

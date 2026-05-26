@@ -43,23 +43,17 @@ public class TelaMenu extends JFrame implements Acionavel {
         add(btnListagem);
 
         // Logo canto inferior direito
-        ImageIcon logoIcon = new ImageIcon(
-            getClass().getResource("/sistemafaculdade/logo.png"));
-        Image logoImg = logoIcon.getImage()
-            .getScaledInstance(130, 130, Image.SCALE_SMOOTH);
+        ImageIcon logoIcon = new ImageIcon(getClass().getResource("/sistemafaculdade/logo.png"));
+        Image logoImg = logoIcon.getImage().getScaledInstance(130, 130, Image.SCALE_SMOOTH);
         JLabel lblLogo = new JLabel(new ImageIcon(logoImg));
         lblLogo.setBounds(730, 480, 140, 140);
         add(lblLogo);
 
         // Actions
-        btnCadastrarAluno.addActionListener(e -> 
-            new TelaCadastroAluno(sistema).executar());
-        btnCadastrarCurso.addActionListener(e -> 
-            new TelaCadastroCurso(sistema).executar());
-        btnMatricula.addActionListener(e -> 
-            new TelaMatricula(sistema).executar());
-        btnListagem.addActionListener(e -> 
-            new TelaListagem(sistema).executar());
+        btnCadastrarAluno.addActionListener(e -> new TelaCadastroAluno(sistema).executar());
+        btnCadastrarCurso.addActionListener(e -> new TelaCadastroCurso(sistema).executar());
+        btnMatricula.addActionListener(e -> new TelaMatricula(sistema).executar());
+        btnListagem.addActionListener(e -> new TelaListagem(sistema).executar());
        
     }
 

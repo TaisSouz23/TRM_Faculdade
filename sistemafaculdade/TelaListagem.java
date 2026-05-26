@@ -24,22 +24,16 @@ public class TelaListagem extends JFrame implements Acionavel {
     public TelaListagem(SistemaFaculdade sistema) {
 
         this.sistema = sistema;
-
         setTitle("Listagem do Sistema");
         setSize(800, 600);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setLocationRelativeTo(null);
-
         setLayout(new BorderLayout());
-
         // Renderer
         renderer = new DefaultTableCellRenderer() {
-
             @Override
             public Component getTableCellRendererComponent(JTable table, Object value, boolean isSelected, boolean hasFocus, int row, int column) {
-
                 Component c = super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, column);
-
                 if (!isSelected) {
                     c.setBackground(Color.WHITE);
                     c.setForeground(Color.BLACK);
@@ -47,9 +41,7 @@ public class TelaListagem extends JFrame implements Acionavel {
                     c.setBackground(new Color(180, 30, 30));
                     c.setForeground(Color.WHITE);
                 }
-                
                 c.setFont(new Font("Arial",Font.PLAIN,14));
-                
                 return c;
             }
         };
@@ -150,11 +142,8 @@ public class TelaListagem extends JFrame implements Acionavel {
     }
 
     private void atualizarTabelaAlunos() {
-
         modeloAlunos.setRowCount(0);
-
         for (Aluno a : sistema.getAlunos()) {
-
             modeloAlunos.addRow(new Object[]{
                     a.getMatricula(),
                     a.getNome(),
