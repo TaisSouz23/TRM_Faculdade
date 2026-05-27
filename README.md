@@ -16,19 +16,32 @@ Listagem Geral — tabelas de alunos e cursos, além de painel de estatísticas 
 
 🗂️ Estrutura do Projeto
 sistemafaculdade/
-├── Acionavel.java          # Interface com método executar()
-├── Aluno.java              # Modelo de dados do aluno
-├── Curso.java              # Modelo de dados do curso
-├── Matricula.java          # Modelo de dados da matrícula
-├── SistemaFaculdade.java   # Lógica de negócio e listas em memória
-├── TelaLogin.java          # Tela de autenticação
-├── TelaMenu.java           # Menu principal
-├── TelaSplash.java         # Tela de carregamento inicial
-├── TelaCadastroAluno.java  # CRUD de alunos
-├── TelaCadastroCurso.java  # CRUD de cursos
-├── TelaMatricula.java      # Vinculação aluno-curso
-├── TelaListagem.java       # Listagem e estatísticas
-└── TesteSistema.java       # Classe main — ponto de entrada
+├── Acionavel.java         
+# Interface com método executar()
+├── Aluno.java              
+# Modelo de dados do aluno
+├── Curso.java              
+# Modelo de dados do curso
+├── Matricula.java          
+# Modelo de dados da matrícula
+├── SistemaFaculdade.java   
+# Lógica de negócio e listas em memória
+├── TelaLogin.java          
+# Tela de autenticação
+├── TelaMenu.java           
+# Menu principal
+├── TelaSplash.java         
+# Tela de carregamento inicial
+├── TelaCadastroAluno.java  
+# CRUD de alunos
+├── TelaCadastroCurso.java  
+# CRUD de cursos
+├── TelaMatricula.java      
+# Vinculação aluno-curso
+├── TelaListagem.java       
+# Listagem e estatísticas
+└── TesteSistema.java       
+# Classe main — ponto de entrada
 
 ⚙️ Pré-requisitos
 
@@ -48,7 +61,9 @@ Execute a classe TesteSistema.java.
 
 
 🔐 Credenciais de Acesso (padrão)
-UsuárioSenhaadmin1234
+Usuário: admin
+Senha: 1234
+
 
 🖥️ Tecnologias Utilizadas
 TecnologiaUsoJavaLinguagem principalJava SwingInterface gráfica (GUI)ArrayListArmazenamento em memória
