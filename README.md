@@ -1,84 +1,179 @@
-🎓 TRM Faculdade — Sistema de Gestão Acadêmica
-Sistema desktop desenvolvido em Java com Swing para gerenciamento de alunos, cursos e matrículas de uma faculdade, criado como trabalho acadêmico para a disciplina de Programação Orientada a Objetos.
+# 🎓 TRM Faculdade
 
-📋 Sobre o Projeto
-O TRM Faculdade é uma aplicação desktop que centraliza o cadastro e controle de informações acadêmicas. Conta com tela de login, menu principal e módulos para gerenciar alunos, cursos e matrículas, além de uma tela de listagem com estatísticas.
+### Sistema de Gestão Acadêmica Desktop em Java Swing
 
-🚀 Funcionalidades
+Aplicação desktop desenvolvida em **Java** utilizando **Swing** para gerenciamento acadêmico de alunos, cursos e matrículas.  
+O projeto foi criado como atividade avaliativa da disciplina de **Programação Orientada a Objetos**, aplicando conceitos de POO, organização modular e interfaces gráficas.
 
-Tela Splash com barra de progresso animada ao iniciar o sistema
-Login com autenticação por usuário e senha
-Cadastro de Alunos — incluir, pesquisar, alterar e excluir alunos
-Cadastro de Cursos — incluir, pesquisar, alterar e excluir cursos
-Matrícula — vincular alunos a cursos
-Listagem Geral — tabelas de alunos e cursos, além de painel de estatísticas (total de alunos, cursos, alunos por turno e bolsistas)
+---
 
+# 📸 Funcionalidades
 
-🗂️ Estrutura do Projeto
-sistemafaculdade/
-├── Acionavel.java         
-# Interface com método executar()
-├── Aluno.java              
-# Modelo de dados do aluno
-├── Curso.java              
-# Modelo de dados do curso
-├── Matricula.java          
-# Modelo de dados da matrícula
-├── SistemaFaculdade.java   
-# Lógica de negócio e listas em memória
-├── TelaLogin.java          
-# Tela de autenticação
-├── TelaMenu.java           
-# Menu principal
-├── TelaSplash.java         
-# Tela de carregamento inicial
-├── TelaCadastroAluno.java  
-# CRUD de alunos
-├── TelaCadastroCurso.java  
-# CRUD de cursos
-├── TelaMatricula.java      
-# Vinculação aluno-curso
-├── TelaListagem.java       
-# Listagem e estatísticas
-└── TesteSistema.java       
-# Classe main — ponto de entrada
+✔️ Splash Screen com barra de carregamento  
+✔️ Sistema de login com autenticação  
+✔️ Cadastro completo de alunos  
+✔️ Cadastro completo de cursos  
+✔️ Sistema de matrículas  
+✔️ Listagem geral com estatísticas  
+✔️ Interface gráfica em Java Swing  
 
-⚙️ Pré-requisitos
+---
 
-Java JDK 8 ou superior
-IDE com suporte a projetos Java (NetBeans, IntelliJ IDEA, Eclipse, etc.)
+# 🖥️ Demonstração do Sistema
 
+## 🔐 Tela de Login
+Sistema de autenticação para acesso à aplicação.
 
-▶️ Como Executar
+## 📋 Menu Principal
+Central de navegação entre os módulos do sistema.
 
-Clone o repositório:
+## 👨‍🎓 Cadastro de Alunos
 
-bash   git clone https://github.com/TaisSouz23/TRM_Faculdade.git
+CRUD completo de alunos:
 
-Abra o projeto na sua IDE.
-Certifique-se de que os recursos de imagem (logo.png) estão dentro da pasta sistemafaculdade/.
-Execute a classe TesteSistema.java.
+- Cadastrar
+- Pesquisar
+- Editar
+- Excluir
 
+## 📚 Cadastro de Cursos
 
-🔐 Credenciais de Acesso (padrão)
+CRUD completo de cursos:
+
+- Cadastrar
+- Pesquisar
+- Editar
+- Excluir
+
+## 📝 Matrículas
+
+Vinculação entre alunos e cursos cadastrados.
+
+## 📊 Estatísticas
+
+Painel com:
+
+- Total de alunos
+- Total de cursos
+- Quantidade de bolsistas
+- Distribuição por turno
+
+---
+
+# 🏗️ Estrutura do Projeto
+
+```bash
+TRM_Faculdade/
+│
+├── core/
+│   ├── Acionavel.java
+│   ├── SistemaFaculdade.java
+│   └── TesteSistema.java
+│
+├── models/
+│   ├── Aluno.java
+│   ├── Curso.java
+│   └── Matricula.java
+│
+├── telas/
+│   ├── TelaSplash.java
+│   ├── TelaLogin.java
+│   ├── TelaMenu.java
+│   ├── TelaCadastroAluno.java
+│   ├── TelaCadastroCurso.java
+│   ├── TelaMatricula.java
+│   └── TelaListagem.java
+│
+└── resources/
+    └── logo.png
+```
+
+---
+
+# ⚙️ Tecnologias Utilizadas
+
+| Tecnologia | Descrição |
+|---|---|
+| Java | Linguagem principal |
+| Java Swing | Interface gráfica |
+| ArrayList | Armazenamento em memória |
+| NetBeans | IDE utilizada no desenvolvimento |
+
+---
+
+# 🚀 Como Executar
+
+## Clone o repositório
+
+```bash
+git clone https://github.com/TaisSouz23/TRM_Faculdade.git
+```
+
+## Abra na IDE
+
+Abra o projeto em uma IDE Java:
+
+- Apache NetBeans
+- IntelliJ IDEA
+- Eclipse
+
+## Execute o sistema
+
+Inicie pela classe:
+
+```bash
+TesteSistema.java
+```
+
+---
+
+# 🔐 Credenciais de Acesso
+
+```txt
 Usuário: admin
 Senha: 1234
+```
 
+---
 
-🖥️ Tecnologias Utilizadas
-TecnologiaUsoJavaLinguagem principalJava SwingInterface gráfica (GUI)ArrayListArmazenamento em memória
+# 🧠 Conceitos Aplicados
 
-📌 Observações
+O projeto utiliza conceitos fundamentais de Programação Orientada a Objetos:
 
-Os dados são armazenados em memória durante a execução. Não há persistência em banco de dados — ao fechar o sistema, os dados são perdidos.
-O projeto utiliza o padrão de interface Acionavel para padronizar a abertura das telas via método executar().
+- Encapsulamento
+- Abstração
+- Modularização
+- Interfaces
+- Reutilização de código
+- Manipulação de eventos
+- Interface gráfica com Swing
 
-👥 Colaboradores
-Trabalho desenvolvido em trio para a disciplina de Programação Orientada a Objetos.
+---
 
-@TaisSouz23
-@mrvinicius25
-@RaymondLima
+# 📌 Observações
 
-👨‍🏫 Professor
-Projeto desenvolvido como trabalho avaliativo para a disciplina de Programação Orientada a Objetos.
+> Os dados são armazenados apenas em memória utilizando `ArrayList`.
+
+- Não há persistência em banco de dados
+- Os dados são perdidos ao fechar a aplicação
+- O sistema utiliza a interface `Acionavel` para padronização das telas através do método `executar()`
+
+---
+
+# 👨‍💻 Equipe
+
+- [Tais Souza](https://github.com/TaisSouz23)
+- [Marcos Vinicius](https://github.com/mrvinicius25)
+- [Raymond Lima](https://github.com/RaymondLima)
+
+---
+
+# 👨‍🏫 Disciplina
+
+Projeto desenvolvido como trabalho avaliativo da disciplina de **Programação Orientada a Objetos (POO)**.
+
+---
+
+# 📄 Licença
+
+Projeto desenvolvido para fins educacionais e acadêmicos.
