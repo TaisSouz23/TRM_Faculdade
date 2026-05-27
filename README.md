@@ -40,7 +40,7 @@ IDE com suporte a projetos Java (NetBeans, IntelliJ IDEA, Eclipse, etc.)
 
 Clone o repositório:
 
-bash   git clone https://github.com/TaisSouz23/trm-faculdade.git
+bash   git clone https://github.com/TaisSouz23/TRM_Faculdade.git
 
 Abra o projeto na sua IDE.
 Certifique-se de que os recursos de imagem (logo.png) estão dentro da pasta sistemafaculdade/.
@@ -58,14 +58,12 @@ TecnologiaUsoJavaLinguagem principalJava SwingInterface gráfica (GUI)ArrayListA
 Os dados são armazenados em memória durante a execução. Não há persistência em banco de dados — ao fechar o sistema, os dados são perdidos.
 O projeto utiliza o padrão de interface Acionavel para padronizar a abertura das telas via método executar().
 
-
 👥 Colaboradores
 Trabalho desenvolvido em trio para a disciplina de Programação Orientada a Objetos.
 
 @TaisSouz23
 @mrvinicius25
 @RaymondLima
-
 
 👨‍🏫 Professor
 Projeto desenvolvido como trabalho avaliativo para a disciplina de Programação Orientada a Objetos.
